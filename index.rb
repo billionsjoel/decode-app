@@ -48,7 +48,7 @@ end
 def decode_word(str)
   string = []
   str.split.each do |w|
-    string.push(CODE[w])
+    string.push(decode_char(w))
   end
   string.join
 end
