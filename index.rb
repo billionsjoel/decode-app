@@ -39,14 +39,14 @@ CODE = {
 
 def decode_char(str)
   if CODE.include?(str)
-     CODE[str]
+  CODE[str]
   else
     ''
   end
 end
 
 def decode_word(str)
-string = []
+  string = []
   str.split.each do |w|
     string.push(CODE[w])
   end
@@ -61,7 +61,7 @@ def decode(str)
   word
 end
 
-puts decode_char(".-")
-puts decode_word("-- -.--")
-puts decode_word("-- -.--   -. .- -- .")
-puts decode("      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...")
+puts decode_char('.-')
+puts decode_word('-- -.--')
+puts decode_word('-- -.--   -. .- -- .')
+puts decode('      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
