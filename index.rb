@@ -40,6 +40,8 @@ CODE = {
 def decode_char(str)
   if CODE.include?(str)
      CODE[str]
+  else
+    ''
   end
 end
 
