@@ -39,7 +39,7 @@ CODE = {
 
 def decode_char(str)
   if CODE.include?(str)
-  CODE[str]
+    CODE[str]
   else
     ''
   end
